@@ -16,7 +16,7 @@ int main(void){
         }
     }
 
-    // 対角成分を１にするように
+    // 対角成分を１にするよう処理
     for(i=0;i<n;i++){
         double head = matrix[i][i];
         if(fabs(head)<1e-6){
@@ -36,10 +36,11 @@ int main(void){
         ans[i] = matrix[i][n] - sum;
     }
 
+    //出力部
     for(i=0;i<n;i++){
         printf("%lf ",ans[i]);
     }
     printf("\n");
-    
+
     return 0;
 }
