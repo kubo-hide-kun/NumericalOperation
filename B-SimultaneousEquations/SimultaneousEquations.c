@@ -33,10 +33,9 @@ int main(void){
     }
 
     for(i=0;i<n;i++){
-        double head = matrix[i][i];
-
         // 対角成分が0なら強制終了
         swapLow(matrix,i,n);
+        double head = matrix[i][i];
         if(fabs(head)<1e-6){
             printf("Can not calcuration\n");
             exit(-1);
